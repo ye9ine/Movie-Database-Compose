@@ -10,21 +10,20 @@
 
 # Tech & Open-source libraries
 - 100% Jetpack Compose, Kotlin based + Coroutines
-- dependency injection with hilt
-- androidx view model for data managing and life cycle awareness
-- live data
+- Dependency injection with hilt
+- Androidx view model for data managing and life cycle awareness
+- Live Data for observable data
 - Architecture pattern
     - MVVM Architecture (View - ViewModel - Model) layers.
 - Retrofit2 & Gson - constructing the REST API
 - Core Splash Api
 - OkHttp3 - implementing interceptor, logging
-- Glide - load network image and cache library
-- Live Data - for observable data
+- Glide - load network and cache image library
 - Paging3 - pagination load data from network
-- youtube player - for load movie and tv series trailer
-- room - for offline caching
-- compose navigation shared element transition
-- pager for horizontal carousel view
+- Youtube player - for load movie and tv series trailer
+- Room - for offline caching
+- Compose navigation shared element transition
+- Pager for horizontal carousel view
 
 <img src="https://github.com/user-attachments/assets/607409ed-3adc-48f7-878c-1646d1492156" width="200" height="400">  <img src="https://github.com/user-attachments/assets/eb320319-60dc-47e0-9af3-d9f12be4db56" width="200" height="400">  <img src="https://github.com/user-attachments/assets/fb5f8016-4070-4d15-9eaf-9567b4988470" width="200" height="400">
 
