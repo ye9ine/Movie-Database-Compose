@@ -13,7 +13,7 @@
 - dependency injection with hilt
 - androidx view model for data managing and life cycle awareness
 - live data
-- Architecture
+- Architecture pattern
     - MVVM Architecture (View - ViewModel - Model) layers.
 - Retrofit2 & Gson - constructing the REST API
 - Core Splash Api
