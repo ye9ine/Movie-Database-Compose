@@ -17,12 +17,14 @@
 - Architecture
     - MVVM Architecture (View - ViewModel - Model) layers.
 - Retrofit2 & Gson - constructing the REST API
-- OkHttp3 - implementing interceptor, logging and mocking web server
-- Glide - loading images
-- BaseRecyclerViewAdapter - implementing adapters and viewHolders
+- Core Splash Api
+- OkHttp3 - implementing interceptor, logging
+- Glide - load network image and cache library
+- Live Data - for observable data
 - Paging3 - pagination load data from network
-- viewBinding - binding view, easily write code and interaction with view
-- slider layout - image slide show with animation
 - youtube player - load youtube video
 - room - offline support
-- unit testing
+- compose animation
+
+
+![img.png](img.png)
