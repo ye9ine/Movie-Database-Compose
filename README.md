@@ -6,7 +6,7 @@
 - Show popular movie, tv series and upcoming movie
 - Youtube trailer and poster
 - Search your favourite movie and tv series
-- work online and offline seamless
+- work online and offline seamlessly
 
 # Tech & Open-source libraries
 - 100% Jetpack Compose, Kotlin based + Coroutines
