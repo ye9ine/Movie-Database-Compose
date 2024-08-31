@@ -154,10 +154,6 @@ dependencies {
     //compose system ui color
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 
-    //network cache image library
-    implementation("io.coil-kt:coil-compose:2.5.0")
-
-
     /*glide*/
     implementation("com.github.bumptech.glide:glide:4.14.2")
     kapt("com.github.bumptech.glide:compiler:4.14.2")
