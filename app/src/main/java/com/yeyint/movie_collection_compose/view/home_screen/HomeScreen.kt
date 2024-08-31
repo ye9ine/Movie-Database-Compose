@@ -101,6 +101,7 @@ fun HomeScreen(
                         movieViewModel.getTv()
                     },
                     onInsertSearchHistory = {
+                        movieViewModel.searchKey.value = it
                         movieViewModel.insertSearchHistory(it)
                     },
                     onGetSearchHistory = {
