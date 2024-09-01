@@ -54,14 +54,14 @@ fun PhotoDetailBody(
         ){
 
             PhotoBox(
-                modifier = Modifier.align(alignment = Alignment.Center)
+                modifier = Modifier.align(alignment = Alignment.Center).fillMaxHeight().fillMaxWidth()
             ) {
                 GlideImage(
                     model = image,
                     contentDescription = "image detail",
-                    contentScale = ContentScale.FillWidth,
                     loading = placeholder(R.mipmap.placeholder),
                     failure = placeholder(R.mipmap.placeholder),
+                    modifier = Modifier.align(alignment = Alignment.Center).fillMaxHeight().fillMaxWidth()
                 )
 
             }

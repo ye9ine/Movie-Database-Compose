@@ -107,7 +107,7 @@ fun MovieDetailScreen(
                     sharedTransitionScope = sharedTransitionScope,
                     animatedContentScope = animatedContentScope,
                     onMovieImageClick = {
-                        shareViewModel.setImage(MovieConstant.basePosterPath + shareViewModel.getMovie()!!.posterPath)
+                        shareViewModel.setImage(MovieConstant.basePosterHighResolutionPath + shareViewModel.getMovie()!!.posterPath)
                         navController.navigate(Screen.PhotoDetailView.name)
                     }
                 )
@@ -133,7 +133,7 @@ fun MovieDetailScreen(
                     MoviePoster(
                         posterList = list,
                         onPosterClick = { poster ->
-                            shareViewModel.setImage(MovieConstant.basePosterPath + poster)
+                            shareViewModel.setImage(MovieConstant.basePosterHighResolutionPath + poster)
                             navController.navigate(Screen.PhotoDetailView.name)
                         },
                     )
