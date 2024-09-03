@@ -21,22 +21,21 @@
 
 Architecture
 This project follows the MVVM architecture pattern:
-
-Model: Represents the data layer. This includes data models and repository classes.
-View: Represents the UI layer. This includes Jetpack Compose UI components.
-ViewModel: Manages the UI-related data and handles the business logic.
-Libraries Used
-Jetpack Compose
-LiveData
-ViewModel
-Kotlin Coroutines
+- Model: Represents the data layer. This includes data models and repository classes.
+- View: Represents the UI layer. This includes Jetpack Compose UI components.
+- ViewModel: Manages the UI-related data and handles the business logic.
+- Libraries Used
+- Jetpack Compose
+- LiveData
+- ViewModel
+- Kotlin Coroutines
 
 Code Structure
-model: Contains data models and repository classes.
-respository: Contains repository classes.
-dao: Contains data access object for room.
-view: Contains UI components built with Jetpack Compose.
-viewmodel: Contains ViewModel classes.
+- model: Contains data models and repository classes.
+- respository: Contains repository classes.
+- dao: Contains data access object for room.
+- view: Contains UI components built with Jetpack Compose.
+- viewmodel: Contains ViewModel classes.
 
 <img src="https://github.com/user-attachments/assets/607409ed-3adc-48f7-878c-1646d1492156" width="200" height="400">  <img src="https://github.com/user-attachments/assets/eb320319-60dc-47e0-9af3-d9f12be4db56" width="200" height="400">  <img src="https://github.com/user-attachments/assets/fb5f8016-4070-4d15-9eaf-9567b4988470" width="200" height="400">
 
