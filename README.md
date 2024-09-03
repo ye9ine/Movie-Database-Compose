@@ -2,22 +2,22 @@
 ## 🎬 An Android application built using Kotlin, Jetpack Compose, MVVM architecture, LiveData, and ViewModel.
 
 # Tech & Open-source libraries
-Jetpack Compose: Modern toolkit for building native UI.
-MVVM Architecture: Separation of concerns and testability.
-LiveData: Observable data holder class.
-ViewModel: Manage UI-related data in a lifecycle-conscious way.
-Kotlin
-Room: For offine caching
-Glide: For Network image and cache
-Retrofit: For http request
-OkHttp3: implementing interceptor, logging
-Core Splash Api
-Paging3: pagination load data from network
-Youtube player: for load movie and tv series trailer
-Comopse Animation: Shared Transition Element
-Di: Hilt
-Pager: Carousel View
-Coroutines
+- Jetpack Compose: Modern toolkit for building native UI.
+- MVVM Architecture: Separation of concerns and testability.
+- LiveData: Observable data holder class.
+- ViewModel: Manage UI-related data in a lifecycle-conscious way.
+- Kotlin
+- Room: For offine caching
+- Glide: For Network image and cache
+- Retrofit: For http request
+- OkHttp3: implementing interceptor, logging
+- Core Splash Api
+- Paging3: pagination load data from network
+- Youtube player: for load movie and tv series trailer
+- Comopse Animation: Shared Transition Element
+- Di: Hilt
+- Pager: Carousel View
+- Coroutines
 
 Architecture
 This project follows the MVVM architecture pattern:
