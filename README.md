@@ -1,29 +1,42 @@
 # Movie Database
-## 🎬 An Android application using Jetpack Compose Framework [The Movie DB](https://www.themoviedb.org) based on Kotlin MVVM architecture and paging 
-
-## Features
-
-- Show popular movie, tv series and upcoming movie
-- Youtube trailer and poster
-- Search your favourite movie and tv series
-- work online and offline seamlessly
+## 🎬 An Android application built using Kotlin, Jetpack Compose, MVVM architecture, LiveData, and ViewModel.
 
 # Tech & Open-source libraries
-- 100% Jetpack Compose, Kotlin based + Coroutines
-- Dependency injection with hilt
-- Androidx view model for data managing and life cycle awareness
-- Live Data for observable data
-- Architecture pattern
-    - MVVM Architecture (View - ViewModel - Model) layers.
-- Retrofit2 & Gson - constructing the REST API
-- Core Splash Api
-- OkHttp3 - implementing interceptor, logging
-- Glide - load network and cache image library
-- Paging3 - pagination load data from network
-- Youtube player - for load movie and tv series trailer
-- Room - for offline caching
-- Compose navigation shared element transition
-- Pager for horizontal carousel view
+Jetpack Compose: Modern toolkit for building native UI.
+MVVM Architecture: Separation of concerns and testability.
+LiveData: Observable data holder class.
+ViewModel: Manage UI-related data in a lifecycle-conscious way.
+Kotlin
+Room: For offine caching
+Glide: For Network image and cache
+Retrofit: For http request
+OkHttp3: implementing interceptor, logging
+Core Splash Api
+Paging3: pagination load data from network
+Youtube player: for load movie and tv series trailer
+Comopse Animation: Shared Transition Element
+Di: Hilt
+Pager: Carousel View
+Coroutines
+
+Architecture
+This project follows the MVVM architecture pattern:
+
+Model: Represents the data layer. This includes data models and repository classes.
+View: Represents the UI layer. This includes Jetpack Compose UI components.
+ViewModel: Manages the UI-related data and handles the business logic.
+Libraries Used
+Jetpack Compose
+LiveData
+ViewModel
+Kotlin Coroutines
+
+Code Structure
+model: Contains data models and repository classes.
+respository: Contains repository classes.
+dao: Contains data access object for room.
+view: Contains UI components built with Jetpack Compose.
+viewmodel: Contains ViewModel classes.
 
 <img src="https://github.com/user-attachments/assets/607409ed-3adc-48f7-878c-1646d1492156" width="200" height="400">  <img src="https://github.com/user-attachments/assets/eb320319-60dc-47e0-9af3-d9f12be4db56" width="200" height="400">  <img src="https://github.com/user-attachments/assets/fb5f8016-4070-4d15-9eaf-9567b4988470" width="200" height="400">
 
