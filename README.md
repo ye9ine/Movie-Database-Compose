@@ -1,6 +1,8 @@
 # Movie Database
 ## 🎬 An Android application built using Kotlin, Jetpack Compose, MVVM architecture, LiveData, and ViewModel.
 
+Movie Database is a fully functional Android app built entirely with Kotlin and Jetpack Compose. Using MVVM Architecture pattern with View model,Life data and dependency injection with Hilt. For seamless experience between online and offline state, cahcing data with Room local database and for load network image and caching with Glide. Using latest recommended best practices tech stack for Android development. 
+
 # Tech & Open-source libraries
 - Jetpack Compose: Modern toolkit for building native UI.
 - MVVM Architecture: Separation of concerns and testability.
