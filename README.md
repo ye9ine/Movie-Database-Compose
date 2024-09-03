@@ -20,6 +20,7 @@ Movie Database is a fully functional Android app built entirely with Kotlin and 
 - Di: Hilt
 - Pager: Carousel View
 - Coroutines
+- Kotlin Coroutines: Asynchronous computation
 
 Architecture
 This project follows the MVVM architecture pattern:
