@@ -49,30 +49,12 @@ class MovieViewModel @Inject constructor(
     }
 
     fun getMovie(){
-        println("get movie")
         movie = if(searchKey.value.isEmpty()) movieRepositoryImpl.getMovie().cachedIn(viewModelScope) else movieRepositoryImpl.searchMovie(searchKey = searchKey.value).cachedIn(viewModelScope)
     }
 
     fun getTv(){
-        println("get tv")
         series = if(searchKey.value.isEmpty()) movieRepositoryImpl.getTv().cachedIn(viewModelScope) else movieRepositoryImpl.searchTv(searchKey = searchKey.value).cachedIn(viewModelScope)
     }
-
-    /*fun getSearchMovie(){
-        movie = movieRepositoryImpl.searchMovie(searchKey = searchKey.value).cachedIn(viewModelScope)
-    }
-
-    fun getSearchTv(){
-        series = movieRepositoryImpl.searchTv(searchKey = searchKey.value).cachedIn(viewModelScope)
-    }*/
-
-    /*fun getSearchMovie(q: String): Flow<PagingData<MovieModel>>{
-        return movieRepositoryImpl.searchMovie(searchKey = q).cachedIn(viewModelScope)
-    }
-
-    fun getSearchTv(q: String): Flow<PagingData<MovieModel>>{
-        return movieRepositoryImpl.searchTv(searchKey = searchKey.value).cachedIn(viewModelScope)
-    }*/
 
 
 
@@ -140,53 +122,6 @@ class MovieViewModel @Inject constructor(
                 upcomingMovieList.addAll(list)
 //                upcomingMovieList.value = UpcomingMovieState.Success(data = list)
             }
-        }
-    }
-
-    fun getAllMovieAndTvFromDb(type: String, searchKey: String) {
-//        offlineMovieList.value = emptyList()
-        viewModelScope.launch {
-            if(type == MovieConstant.movie){
-                if(searchKey.isNotEmpty()){
-                    movieRepositoryImpl.searchMovieFromDb(searchKey).collect{
-                        offlineMovieList.addAll(it)
-                    }
-                }else{
-                    movieRepositoryImpl.getMovieFromDb().collect{
-                        offlineMovieList.addAll(it)
-                        for (i in it) {
-                            Log.d("offlinemvoe", i.title!!)
-                        }
-                    }
-                }
-            }else{
-                if(searchKey.isNotEmpty()){
-                    movieRepositoryImpl.getTvFromDb().collect{
-                        val list = mutableListOf<MovieModel>()
-                        for (i in it) {
-                            i.type = MovieConstant.tvSeries
-                            val movieModel = MovieModel(id = i.id, i.adult, i.backdropPath, i.originalLanguage, i.originalTitle, i.overview, i.popularity, i.posterPath, i.releaseDate,
-                                i.title, i.video, i.voteAverage, i.voteCount, i.originalName, i. firstAirDate, i.type)
-                            list.add(movieModel)
-                        }
-                        offlineMovieList.addAll(list)
-                    }
-                }else{
-                    movieRepositoryImpl.searchTvFromDb(searchKey).collect{
-                        val list = mutableListOf<MovieModel>()
-                        for (i in it) {
-                            i.type = MovieConstant.tvSeries
-                            val movieModel = MovieModel(id = i.id, i.adult, i.backdropPath, i.originalLanguage, i.originalTitle, i.overview, i.popularity, i.posterPath, i.releaseDate,
-                                i.title, i.video, i.voteAverage, i.voteCount, i.originalName, i. firstAirDate, i.type)
-                            list.add(movieModel)
-                        }
-                        offlineMovieList.addAll(list)
-                    }
-                }
-
-            }
-
-
         }
     }
 }
